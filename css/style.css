@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #container, .front-page {
+    display: flex;
+    margin: 8%;
+  }
+
+  .container {
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+  }
+
+  #container, .process {
+    margin-top: 5%;
+    margin-right: 14%;
+    padding: 30px;
+  }
+
+  #container, .attended{
+    color: lightgray;
+    padding-top: 20px;
+  }
+
+  #container, .zero {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: purple;
+    position: relative;
+  }
+
+  #container, .pzero {
+    line-height: 30px;
+    text-align: center;
+    color: white;
+  }
+
+  #container, .zero-div {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.24;
+    position: absolute;
+    bottom: 1%;
+    left: 20%;
+  }
+
+  #container, .dashed {
+    width: 0%;
+    height: 45px;
+    border-left: 3px dashed orange;
+    margin-top: 10px;
+  }
+  
+  #container, .both {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #container, .quote {
+    display: flex;
+  }
+
+  #container, .quote-text {
+    padding: 8px;
+  }
+
+  #container, .quote-parent {
+    padding-right: 5%;
+    padding-left: 3%;
+  }
+
+  #container, .through {
+    padding-top: 10px;
+  }
+
+  .second-cont {
+    height: 100vh;
+    background: #F2F2F2;
+    text-align: center;
+  }
+
+  #second-cont, .head-area{
+    margin-top:%;
+    margin-bottom:%;
+  }
+  #second-cont, .offer{
+    font-size: 20px;
+    padding-top: 5%;
+  }
+  #second-cont, .repair{
+    font-size: 30px;
+    margin-right:30%;
+    margin-left: 30%;
+    margin-top: 4px;
+    margin-bottom: 2%;
+  }
+  
+  #second-cont, .head-body{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #second-cont, .hbody{
+    background: white;
+    width: 40vh;
+    height: 23vh;
+    padding-top: 35px;
+    margin: 2px;
+    font-size: 15px;
+  }
+
+  #second-cont, .hbody-img {
+      width: 30px;
+      height: 30px;
+  }
+  
+  #second-cont, .tomato-body { 
+    background: #FF6433;
+    width: 40vh;
+    height: 23vh;
+    padding-top: 35px;
+    margin: 2px;
+    font-size: 15px;
+  }
+  
+  #second-cont, .arrow-area {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 13%;
+    padding-top: 20px;
+  }
+
+  #second-cont, .arrow-img {
+      width: 10vh;
+      padding-left: 10px;
+  }
+  
+  .third-cont{
+    height: 75vh;
+    background-color: lightgray;
+  }
+  
+  #third-cont, .image-page{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #third-cont, .mec {
+    height:60vh;
+    width: 100vh;
+  }
+  #third-cont, .img-root{
+    height: 60vh;
+    width: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #third-cont, .img-root{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #third-cont, .img-text{
+    background: tomato;
+    font-size: 25px;
+    margin-left: 30%;
+    padding: 15%;
+    color: white;
+  }
+  
+  #third-cont, .plus-sec {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: 12%;
+    margin-left: 12%;
+  }
+  
+  #third-cont, .plus {
+    color: #661CE7;
+  }
+  
+  .last-section {
+    height: 40vh;
+  }
+  
+  #last-section, .last-sec {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #last-section, .logo {
+    width: 10%;
+    height: 10%;
+    padding-bottom: 7px;
+  }
+
+  #last-section, .brands {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
