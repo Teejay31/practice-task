@@ -3,22 +3,208 @@
     margin: 0;
     box-sizing: border-box;
   }
-  
-  #container, .front-page {
+
+body {
+  width: 100%;
+  overflow-x:hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+  .head-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-header {
     display: flex;
-    margin: 8%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section ul {
+    list-style: none;
+    display: flex;
+}
+
+.road-assistance {
+    display: flex;
+    padding-left: 20px;
+}
+
+.right-section ul li {
+    margin-right: 20px;
+}
+
+.right-section ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.right-section .navigation {
+    border-right: 2px solid #ccc;
+}
+
+.road-assistance .icon {
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+#hero-section .text-section{
+    width: 45%;
+} 
+
+#hero-section .image-section {
+    width: 55%;
+}
+
+#hero-section, #quote-section {
+    padding: 80px 0;
+}
+
+#hero-section .image-section {
+    background-image: url(../img/Header\ Image.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 68vh;
+}
+
+.text-section h1 {
+    font-size: 44px;
+}
+
+.orange-btn {
+    background: #FF6433;
+    border-radius: 12px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.form-box {
+  margin-bottom: 20px;
+}
+
+.time-section {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.text-section .image-box {
+    width: 8%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-section .time-text {
+    width: 95%;
+}
+.time-section img {
+    width: 100%;
+}
+
+.light-grey {
+    color: #939191;
+}
+
+#quote-section {
+    background: #E2E6E9;
+}
+
+#quote-section .left-section, #quote-section .right-form-section {
+    width: 45%;
+}
+
+#quote-section ul {
+    list-style: none;
+}
+
+#quote-section ul li {
+    margin-bottom: 20px;
+}
+
+#quote-section .left-section h2 {
+    margin-bottom: 30px;
+    font-size: 42px;
+}
+
+#quote-section .left-section .image-box {
+    width: 11%;
+    height: 11%;
+    margin-right: 10px;
+}
+
+#quote-section .left-section .image-box img {
+  width: 100%;
+}
+
+#quote-section .left-section .text-box {
+  width: 50%;
+}
+
+#quote-section .left-section .know-more {
+    display:flex;
+    text-decoration: none;
+    color: #000;
+}
+
+.more-arrow {
+  margin-left: 20px;  
+}
+
+#quote-section .left-section .text-box h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#quote-section .right-form-section h3{
+    font-size: 48px;
+}
+
+.right-form-section {
+  margin-left: 15%;
+}
+
+#quote-section .right-form-section input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 3px;
+    border-color: white;
+}
+  
+  .b-container {
+    min-height: 80vh;
+    padding: 100px 0;
   }
 
-  .container {
-    width: 80%;
-    height: 60vh;
+  #container, .front-page {
+    display: flex;
     margin: 0 auto;
+    width: 80%;
   }
 
   #container, .process {
-    margin-top: 5%;
-    margin-right: 14%;
-    padding: 30px;
+    width: 50%;
+    padding: 40px;
+    margin-left: 10%;
   }
 
   #container, .attended{
@@ -32,11 +218,14 @@
     border-radius: 50%;
     background-color: purple;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   #container, .pzero {
     line-height: 30px;
-    text-align: center;
     color: white;
   }
 
@@ -47,13 +236,13 @@
     background-color: white;
     opacity: 0.24;
     position: absolute;
-    bottom: 1%;
+    bottom: -15%;
     left: 20%;
   }
 
   #container, .dashed {
     width: 0%;
-    height: 45px;
+    height: 40px;
     border-left: 3px dashed orange;
     margin-top: 10px;
   }
@@ -70,11 +259,13 @@
 
   #container, .quote-text {
     padding: 8px;
+    font-size: 18px;
   }
 
   #container, .quote-parent {
-    padding-right: 5%;
-    padding-left: 3%;
+    width: 50%;
+    padding-right: %;
+    padding-left: %;
   }
 
   #container, .through {
@@ -82,84 +273,83 @@
   }
 
   .second-cont {
-    height: 100vh;
-    background: #F2F2F2;
-    text-align: center;
+    min-height: 100vh;
+    background: #E2E6E9;
+    padding: 80px 0;
   }
 
-  #second-cont, .head-area{
-    margin-top:%;
-    margin-bottom:%;
+  .page2 {
+    width: 80%;
+    margin: 0 auto;
   }
-  #second-cont, .offer{
+
+  .head-area {
+    text-align: center;
     font-size: 20px;
-    padding-top: 5%;
   }
-  #second-cont, .repair{
-    font-size: 30px;
-    margin-right:30%;
-    margin-left: 30%;
-    margin-top: 4px;
-    margin-bottom: 2%;
-  }
-  
-  #second-cont, .head-body{
-    display: flex;
-    justify-content: center;
-  }
-  
+
   #second-cont, .hbody{
     background: white;
-    width: 40vh;
-    height: 23vh;
-    padding-top: 35px;
-    margin: 2px;
-    font-size: 15px;
+    height: 232px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 24%;
+    margin-bottom: 10px;
   }
 
-  #second-cont, .hbody-img {
-      width: 30px;
-      height: 30px;
-  }
-  
-  #second-cont, .tomato-body { 
+  #second-cont, .hbody:hover {
     background: #FF6433;
-    width: 40vh;
-    height: 23vh;
-    padding-top: 35px;
-    margin: 2px;
-    font-size: 15px;
+    color: #fff;
   }
-  
+
+  .head-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+ 
   #second-cont, .arrow-area {
     display: flex;
     justify-content: flex-end;
-    padding-right: 13%;
-    padding-top: 20px;
-  }
-
-  #second-cont, .arrow-img {
-      width: 10vh;
-      padding-left: 10px;
   }
   
+  #second-cont, .arrow-area a {
+    display: flex;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  #second-cont, .arrow-area p {
+    margin-right: 10px;
+  }
+
   .third-cont{
-    height: 75vh;
+    min-height: 75vh;
     background-color: lightgray;
   }
   
   #third-cont, .image-page{
     display: flex;
-    justify-content: center;
+    width: 100%
   }
   
   #third-cont, .mec {
-    height:60vh;
-    width: 100vh;
-  }
-  #third-cont, .img-root{
     height: 60vh;
-    width: 120vh;
+    width: 40%;
+    background-image: url(../img/image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+
+  #third-cont, .img-root{
+    background-image: url(../img/Image1.jpg);
+    height: 60vh;
+    width: 20%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -171,10 +361,12 @@
   }
   
   #third-cont, .img-text{
+    height: 60vh;
+    width: 40%;
     background: tomato;
-    font-size: 25px;
-    margin-left: 30%;
-    padding: 15%;
+    font-size: 22px;
+    padding-left: 30px;
+    padding-top: 30px;
     color: white;
   }
   
@@ -211,3 +403,882 @@
     margin-bottom: 5px;
     font-size: 30px;
   }
+
+  .customer { 
+    background: #f2f2f2;
+    min-height: 80vh;
+    padding: 80px 0;
+  }
+
+  .cus-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .cus-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cus-per {
+    display: flex;
+  }
+
+  .cus-image {
+    margin: 10px;
+    padding: 28px;
+    background: white;
+  }
+
+  .cust-image {
+    margin: 10px;
+    padding: 28px;
+    background: white;
+  }
+
+  .the-p {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .person {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ph-text {
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+
+  .bord {
+    width: 50%;
+  }
+
+  .bord-flex {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .border-dash {
+    width: 15px;
+    height: 4px;
+    margin: 2px;
+    background: white;
+  }
+
+  .dash-arrow {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+  }
+
+  .dash-flex {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: px;
+  }
+
+  .border-dash:hover {
+    background: #FF6433;
+  }
+
+  .dash-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .dash-img2 {
+    width: 25px;
+    height: 25px;
+  }
+
+  .frequently {
+    min-height: 100vh;
+    padding: 80px 0;
+    background: #E2E6E9;
+  }
+
+  .fre-head { 
+    padding: 25px;
+    text-align: center;
+  }
+
+  .fre-section {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .fre-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fre-txt {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 13px;
+    width: 50%;
+    margin-bottom: 5px;
+  }
+
+  .fre-p {
+    font-size: 12px;
+    padding-top: 10px;
+    color: #939191;
+  }
+
+  .sign {
+    background: #FF6433;
+    Width: 48px;
+    Height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .last-page {
+    min-height: 100vh;
+  }
+
+  .last-p {
+    background: #1e1b1b;
+    color: #fff;
+  }
+
+  .lst-page {
+    display: flex;
+    padding: 20px;
+  }
+
+  .get-sec {
+    width: 48%;
+    padding: 50px;
+    margin-left: 7%;
+  }
+
+  .info-p {
+    width: 52%;
+  }
+
+  .last-txt {
+    padding: 20px;
+  }
+
+  .last-txt p{
+    padding-bottom: 15px;
+    font-size: 12px;
+  }
+
+  .get-sec h2{
+    padding-bottom: 35px;
+  }
+
+  .social {
+    padding-right: 10px;
+    width: 28px;
+    height: 22px;
+  }
+
+  .main-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5px;
+  }
+
+  .info-section {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.info-section ul {
+    list-style: none;
+    display: flex;
+}
+
+.info-section ul li {
+    margin-right: 27px;
+}
+
+.info-section ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-img {
+  width: 100px;
+  height: 20px;
+}
+
+.foot-nav {
+  padding-right: 70px;
+}
+
+.copy-foot {
+  padding-left: 40px;
+}
+
+.container-info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.services {
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.service-head {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  color: #fff;
+}
+
+.bk-img {
+  background: url(../img/image36.png) no-repeat;
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+}
+
+.second-side {
+background-color: #000;
+width: 60%;
+height: 60vh;
+padding: 45px;
+}
+
+.second-side h1, p{
+  padding-top: 10px;
+}
+
+.second-side h1{
+  font-size: 64px;
+}
+
+.second-side p{
+  font-size: 18px;
+}
+
+.auto {
+  min-height: 100vh;
+  padding: 80px 0;
+  background: #F5F5F5;
+}
+
+.auto-diag {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.auto-ph{
+  background: white;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 49%;
+  margin-bottom:px;
+}
+
+.auto-ph:hover {
+  background: #FF6433;
+  color: #fff;
+}
+
+.auto-second {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px;
+  height: 60vh;
+}
+
+.auto-first h1, p{
+  padding-top: 10px;
+}
+
+.auto-arrow {
+  display: flex;
+  padding-top: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.arr {
+  width: 52px;
+  height: px;
+}
+
+.auto-first {
+  height: 60vh;
+  margin: 15px;
+}
+
+.autofirst {
+  width: 360px;
+  height: 200px;
+}
+
+.car-problem {
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.car-pro {
+  width: 80%;
+  min-height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.for-texts, .for-images {
+  width: 50%;
+  min-height: 50vh;
+}
+
+.for-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.for-img {
+  Width: 49%;
+  Height: 400px;
+}
+
+.checkmark {
+  display: flex;
+}
+
+.for-texts h1{
+  font-size: 48px;
+  padding-bottom: 35px;
+}
+
+.checkmark p{
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.imgcheck {
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  margin-right: 12px;
+}
+
+.cars-about {
+  min-height: 80vh;
+  padding: 80px 0;
+  margin-top: 10%;
+}
+
+.for-car {
+  min-height: 80vh;
+  width: 50%;
+}
+
+.cars-texts {
+  min-height: 50vh;
+  width: 50%;
+  padding-bottom:px;
+  padding-left: 35px;
+}
+
+.cars-texts h1{
+  font-size: 40px;
+  padding-bottom: 30px;
+
+}
+
+.cars-texts p{
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.car-abt {
+  width: 80%;
+  min-height: 405px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/*for mobile*/
+@media (max-width: 426px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  #hero-section .text-section, #hero-section .image-section {
+    width: 100%;
+  }
+
+  #hero-section .text-section {
+    
+  }
+
+  #hero-section .text-section h1{
+    font-size: 30px;
+  }
+
+  #hero-section, #quote-section {
+    padding: 20px;
+  }
+
+  #quote-section .left-section, #quote-section .right-form-section {
+    width: 100%;
+  }
+
+  #quote-section .left-section h2 {
+    font-size: 30px;
+  }
+
+  .right-form-section{
+    margin-left: 0;
+  }
+
+  #quote-section .right-form-section h3 {
+    font-size: 30px;
+  }
+
+  #container, .process {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #container, .front-page{
+    flex-direction: column;
+  }
+
+  .b-container {
+    padding: 20px;
+  }
+
+  #container, .quote-parent {
+    width: 100%;
+  }
+
+  #container, .dashed {
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  #container, .through {
+    font-size: 14px;
+  }
+
+  .second-cont {
+    padding: 20px;
+  }
+
+  #second-cont, .hbody {
+    height: 100px;
+    width: 49%;
+  }
+
+  .img-text {
+    display: flex;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+
+  #third-cont, .plus-sec {
+    margin: 5%;
+    padding: 0;
+  }
+
+  .last-section {
+    height: 25vh;
+  }
+
+  #last-section, .logo {
+    width: 15%;
+    height: 15%;
+  }
+
+  .customer {
+    padding: 20px;
+  }
+
+  .cust-image, .cus-image {
+    padding: 15px;
+  }
+
+  .auto-first {
+    min-height: 60vh;
+  }
+
+  .auto-first p{
+    padding-right: 0;
+    padding-top: 10px;
+  }
+
+  .the-p {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  .frequently {
+    padding: 20px;
+  }
+
+  .fre-txt {
+    width: 100%;
+  }
+
+  .fre-head {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .last-txt h4 {
+    font-size: 14px;
+  }
+
+  .last-txt {
+    padding: 12px;
+  }
+
+  .get-sec {
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .get-sec h2 {
+    font-size: 16px;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  .info-section ul li a {
+    font-size: 12px;
+  }
+
+  .info-section ul li {
+    margin-right: 7px;
+  }
+
+  .foot-nav {
+    padding-right: 10px;
+  }
+
+  .copy-foot {
+    padding-left: 1px;
+  }
+
+  .main-info {
+    padding: 20px 0;
+  }
+
+  .second-side {
+    padding: 20px;
+    width: 100%;
+    order: 1;
+  }
+
+  .services {
+    margin-bottom: 0;
+    padding: 20px 0;
+  }
+
+  .service-head {
+    flex-direction: column;
+  }
+
+  .bk-img {
+    width: 100%;
+    order: 2;
+  }
+
+  .second-side h1 {
+    padding-top: 0;
+    font-size: 30px;
+  }
+
+  .second-side p {
+    font-size: 16px;
+    padding-top: 15px;
+  }
+
+  .auto {
+    padding: 10px;
+  }
+
+  .auto-ph {
+    margin-bottom: 5px;
+    width: 32%;
+  }
+
+  .auto-diag {
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 15%;
+    width: 100%;
+    margin-bottom: 15%;
+  }
+
+  .autofirst {
+    width: 100%;
+    height: 200px;
+  }
+
+  .auto-second {
+    padding-top: 20px;
+  }
+
+  .for-texts, .for-images {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .for-images {
+    flex-direction: column;
+  }
+
+  .for-img {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+  }
+
+  .for-texts h1 {
+    font-size: 32px;
+    padding-bottom: 5px;
+  }
+
+  .car-problem {
+    padding: 20px 0;
+  }
+
+.road-assistance {
+  display: none;
+}
+
+.right-section .navigation {
+  border: none;
+}
+  
+.right-section ul li {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.car-pro {
+  flex-direction: column;
+}
+
+.dont {
+  display: flex;
+}
+
+#quote-section .left-section .text-box {
+  width: 100%;
+}
+
+.auto-first h1, p {
+  font-size: 14px;
+}
+
+.cars-about {
+  margin-top: 0;
+  padding: 20px 0;
+}
+
+.car-abt {
+  flex-direction: column;
+}
+
+  .for-car {
+    order: 2;
+    width: 100%;
+  }
+
+  .cars-texts {
+    order: 1;
+    width: 100%;
+  }
+
+  .cars-texts p {
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+
+  .cars-texts h1 {
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+
+}
+
+/*tablet view*/
+
+@media (max-width: 769px) {
+
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero-section, #quote-section {
+    padding: 20px 0;
+  }
+
+  #hero-section .text-section, #hero-section .image-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #quote-section .left-section .text-box {
+    width: 100%;
+  }
+
+  #quote-section .left-section h2, #quote-section .right-form-section h3 {
+    font-size: 30px;
+  }
+
+  .text-section h1 {
+    font-size: 22px;
+  }
+
+  .form-box {
+    margin-top: 15%;
+  }
+
+  .dont {
+    display: flex;
+  }
+
+  .orange-btn {
+    margin-top: 8%;
+  }
+
+  #container, .process, #container, .quote-parent {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  #container, .through {
+    font-size: 14px;
+  }
+
+  #container, .dashed {
+    margin-bottom: 10px;
+  }
+
+  .dash-flex {
+    width: 50%;
+  }
+
+  .dash-arrow {
+    width: 50%;
+  }
+
+  .frequently, .auto, .services, .customer, .second-cont, .b-container, .car-problem, .cars-about {
+    padding: 20px 0;
+  }
+
+  .fre-txt {
+    width: 100%;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  .second-side {
+    padding: 10px;
+  }
+
+  .second-side h1 {
+    margin-top: 0;
+    font-size: 30px;
+  }
+
+  .second-side p {
+    font-size: 17px;
+  }
+
+  .auto-first, .auto-second {
+    margin: 0;
+    min-height: 60vh;
+  }
+
+  .auto-first {
+    padding: 15px;
+    margin-bottom: 10%;
+  }
+
+  .auto-ph {
+    margin-bottom: 5px;
+  }
+
+  .for-images {
+    flex-direction: column;
+    justify-content: normal;
+  }
+
+  .for-img {
+    width: 100%;
+    height: 45vh;
+    padding-top: 10px;
+  }
+
+  .for-texts h1 {
+    font-size: 30px;
+    padding-top: 15px;
+  }
+
+  .checkmark p {
+    font-size: 18px;
+  }
+
+  .cars-texts p {
+    font-size: 15px;
+  }
+
+  .cars-texts h1 {
+   font-size: 24px; 
+   padding-top: 10%;
+  }
+
+  .car-pro {
+    height: vh;
+  }
+  
+  .for-texts {
+    padding-top: 15%;
+  }
+
+}
