@@ -160,6 +160,10 @@ body {
   width: 50%;
 }
 
+.dont {
+  display: flex;
+}
+
 #quote-section .left-section .know-more {
     display:flex;
     text-decoration: none;
@@ -512,6 +516,11 @@ body {
     width: 80%;
   }
 
+  .go-to {
+    display: flex;
+    justify-content:center;
+  }
+
   .fre-flex {
     display: flex;
     flex-direction: column;
@@ -531,6 +540,7 @@ body {
     font-size: 12px;
     padding-top: 10px;
     color: #939191;
+    width: 85%;
   }
 
   .sign {
@@ -544,12 +554,12 @@ body {
     color: #fff;
   }
 
-  .last-page {
-    min-height: 100vh;
+  .last-page, .forlast-page {
+    background: black;
+    min-height: 70vh;
   }
 
   .last-p {
-    background: #1e1b1b;
     color: #fff;
   }
 
@@ -634,7 +644,6 @@ body {
 
 .services {
   min-height: 100vh;
-  padding: 80px 0;
 }
 
 .service-head {
@@ -642,6 +651,7 @@ body {
   width: 80%;
   display: flex;
   color: #fff;
+  padding: 50px 0;
 }
 
 .bk-img {
@@ -784,10 +794,16 @@ padding: 45px;
   margin-right: 12px;
 }
 
-.cars-about {
-  min-height: 80vh;
+.classfor-about {
+  min-height: 100vh;
   padding: 80px 0;
-  margin-top: 10%;
+  background-color:#E2E6E9;
+}
+
+.cars-about {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: ;
 }
 
 .for-car {
@@ -803,14 +819,13 @@ padding: 45px;
 }
 
 .cars-texts h1{
-  font-size: 40px;
-  padding-bottom: 30px;
-
+  font-size: 30px;
+  padding-bottom: 20px;
 }
 
 .cars-texts p{
   font-size: 18px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .car-abt {
@@ -833,6 +848,11 @@ padding: 45px;
     align-items: flex-end;
   }
 
+  .company-logo {
+    width: 80px;
+    height: 20px;
+  }
+
   .flex {
     flex-direction: column;
   }
@@ -841,12 +861,9 @@ padding: 45px;
     width: 100%;
   }
 
-  #hero-section .text-section {
-    
-  }
-
   #hero-section .text-section h1{
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
   }
 
   #hero-section, #quote-section {
@@ -914,7 +931,28 @@ padding: 45px;
 
   #third-cont, .plus-sec {
     margin: 5%;
-    padding: 0;
+    padding: 5px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .for-plus {
+    padding-right: 7px;
+  }
+
+  #third-cont, .image-page {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  } 
+
+  #third-cont, .img-root, #third-cont, .img-text, #third-cont, .mec {
+    width: 100%;
+  }
+
+  #third-cont, .img-text {
+    height: 30vh;
   }
 
   .last-section {
@@ -1076,6 +1114,7 @@ padding: 45px;
   .for-texts h1 {
     font-size: 32px;
     padding-bottom: 5px;
+    padding-top: 0;
   }
 
   .car-problem {
@@ -1128,6 +1167,7 @@ padding: 45px;
   .cars-texts {
     order: 1;
     width: 100%;
+    padding-left: 0;
   }
 
   .cars-texts p {
@@ -1138,6 +1178,10 @@ padding: 45px;
   .cars-texts h1 {
     font-size: 25px;
     padding-bottom: 15px;
+  }
+
+  .fre-p {
+    width: 85%;
   }
 
 }
@@ -1155,6 +1199,11 @@ padding: 45px;
     padding: 20px 0;
   }
 
+  .company-logo {
+    width: 80px;
+    height: 20px;
+  }
+
   #hero-section .text-section, #hero-section .image-section {
     width: 100%;
     padding: 20px;
@@ -1165,7 +1214,9 @@ padding: 45px;
   }
 
   #quote-section .left-section h2, #quote-section .right-form-section h3 {
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5%;
   }
 
   .text-section h1 {
@@ -1173,7 +1224,7 @@ padding: 45px;
   }
 
   .form-box {
-    margin-top: 15%;
+    margin-top: 5%;
   }
 
   .dont {
@@ -1232,7 +1283,7 @@ padding: 45px;
 
   .auto-first, .auto-second {
     margin: 0;
-    min-height: 60vh;
+    height: 60vh;
   }
 
   .auto-first {
@@ -1247,17 +1298,19 @@ padding: 45px;
   .for-images {
     flex-direction: column;
     justify-content: normal;
+    align-items: center;
   }
 
   .for-img {
-    width: 100%;
-    height: 45vh;
+    width: 80%;
+    height: 40vh;
     padding-top: 10px;
   }
 
   .for-texts h1 {
     font-size: 30px;
     padding-top: 15px;
+    text-align: center;
   }
 
   .checkmark p {
@@ -1265,12 +1318,13 @@ padding: 45px;
   }
 
   .cars-texts p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .cars-texts h1 {
    font-size: 24px; 
    padding-top: 10%;
+   text-align: center;
   }
 
   .car-pro {
@@ -1278,7 +1332,15 @@ padding: 45px;
   }
   
   .for-texts {
-    padding-top: 15%;
+    padding-top: 5%;
+  }
+
+  .cars-about {
+    margin-top: 0%;
+  }
+
+  .for-car {
+    text-align: center;
   }
 
 }
