@@ -6,17 +6,11 @@
 
 body {
   width: 100%;
-  overflow-x:hidden;
 }
 
-.container {
+.container, .head-container {
   width: 80%;
   margin: 0 auto;
-}
-
-  .head-container {
-    width: 80%;
-    margin: 0 auto;
 }
 
 .main-header {
@@ -26,7 +20,7 @@ body {
     padding: 20px 5px;
 }
 
-.right-section {
+.right-section, .time-section {
     display: flex;
     align-items: center;
 }
@@ -70,8 +64,8 @@ body {
     width: 55%;
 }
 
-#hero-section, #quote-section {
-    padding: 80px 0;
+#hero-section, #quote-section, .time-section {
+    padding-top: 30px;
 }
 
 #hero-section .image-section {
@@ -81,8 +75,9 @@ body {
     min-height: 68vh;
 }
 
-.text-section h1 {
-    font-size: 44px;
+.text-section h1, .right-form-section h3 {
+    font-size: 35px;
+    padding-bottom: 12px;
 }
 
 .orange-btn {
@@ -98,12 +93,6 @@ body {
 
 .form-box {
   margin-bottom: 20px;
-}
-
-.time-section {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
 }
 
 .text-section .image-box {
@@ -130,7 +119,7 @@ body {
 }
 
 #quote-section .left-section, #quote-section .right-form-section {
-    width: 45%;
+    width: 50%;
 }
 
 #quote-section ul {
@@ -143,7 +132,7 @@ body {
 
 #quote-section .left-section h2 {
     margin-bottom: 30px;
-    font-size: 42px;
+    font-size: 35px;
 }
 
 #quote-section .left-section .image-box {
@@ -170,6 +159,15 @@ body {
     color: #000;
 }
 
+.txt-dark {
+  font-weight: bolder;
+}
+
+.txt-red {
+  font-weight: bolder;
+  color: red;
+}
+
 .more-arrow {
   margin-left: 20px;  
 }
@@ -179,12 +177,9 @@ body {
     margin-bottom: 5px;
 }
 
-#quote-section .right-form-section h3{
-    font-size: 48px;
-}
 
 .right-form-section {
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 #quote-section .right-form-section input {
@@ -208,7 +203,6 @@ body {
   #container, .process {
     width: 50%;
     padding: 40px;
-    margin-left: 10%;
   }
 
   #container, .attended{
@@ -273,7 +267,7 @@ body {
   }
 
   #container, .through {
-    padding-top: 10px;
+    padding-top: 6px;
   }
 
   .second-cont {
@@ -294,7 +288,7 @@ body {
 
   #second-cont, .hbody{
     background: white;
-    height: 232px;
+    height: 24vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,10 +319,6 @@ body {
     display: flex;
     color: #000;
     text-decoration: none;
-  }
-  
-  #second-cont, .arrow-area p {
-    margin-right: 10px;
   }
 
   .third-cont{
@@ -368,8 +358,8 @@ body {
     height: 60vh;
     width: 40%;
     background: tomato;
-    font-size: 22px;
-    padding-left: 30px;
+    font-size: 20px;
+    padding-left: 15px;
     padding-top: 30px;
     color: white;
   }
@@ -429,16 +419,15 @@ body {
     display: flex;
   }
 
-  .cus-image {
-    margin: 10px;
-    padding: 28px;
-    background: white;
-  }
-
   .cust-image {
     margin: 10px;
     padding: 28px;
     background: white;
+    width: 50%;
+  }
+
+  .just {
+    text-align: justify;
   }
 
   .the-p {
@@ -462,7 +451,7 @@ body {
 
   .bord-flex {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .border-dash {
@@ -472,18 +461,11 @@ body {
     background: white;
   }
 
-  .dash-arrow {
-    display: flex;
-    justify-content: flex-end;
-    width: 40%;
-  }
-
   .dash-flex {
     display: flex;
     justify-content: center;
     width: 70%;
     margin: 0 auto;
-    padding: px;
   }
 
   .border-dash:hover {
@@ -537,7 +519,6 @@ body {
   }
 
   .fre-p {
-    font-size: 12px;
     padding-top: 10px;
     color: #939191;
     width: 85%;
@@ -545,13 +526,14 @@ body {
 
   .sign {
     background: #FF6433;
-    Width: 48px;
-    Height: 48px;
+    Width: 38px;
+    Height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 800;
     color: #fff;
+    padding: 20px;
   }
 
   .last-page, .forlast-page {
@@ -624,9 +606,23 @@ body {
     color: #fff;
 }
 
-.logo-img {
-  width: 100px;
-  height: 20px;
+.text-none {
+  text-decoration: none;
+  color: white;
+}
+
+.arrow {
+  width: 10%;
+  height: 15%;
+  object-fit: cover;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.logo-img, .company-logo {
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
 }
 
 .foot-nav {
@@ -669,16 +665,8 @@ height: 60vh;
 padding: 45px;
 }
 
-.second-side h1, p{
-  padding-top: 10px;
-}
-
 .second-side h1{
-  font-size: 64px;
-}
-
-.second-side p{
-  font-size: 18px;
+  font-size: 48px;
 }
 
 .auto {
@@ -691,7 +679,7 @@ padding: 45px;
   display: flex;
   justify-content: center;
   width: 80%;
-  height: 80vh;
+  min-height: 80vh;
   margin: 0 auto;
 }
 
@@ -703,7 +691,7 @@ padding: 45px;
   align-items: center;
   text-align: center;
   width: 49%;
-  margin-bottom:px;
+  padding: 20px;
 }
 
 .auto-ph:hover {
@@ -719,8 +707,19 @@ padding: 45px;
   height: 60vh;
 }
 
-.auto-first h1, p{
+.auto-first h1{
   padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.fr-txts {
+  width: 80%;
+}
+
+.justify {
+  text-align: justify;
+  font-size: 20px;
 }
 
 .auto-arrow {
@@ -735,13 +734,18 @@ padding: 45px;
   height: px;
 }
 
+.auto-first, .auto-second {
+  width: 50%;
+}
+
 .auto-first {
   height: 60vh;
   margin: 15px;
 }
 
 .autofirst {
-  width: 360px;
+  width: 80%;
+  object-fit: cover;
   height: 200px;
 }
 
@@ -758,9 +762,14 @@ padding: 45px;
   justify-content: center;
 }
 
+.cars-texts h1 {
+  padding-bottom: 15px;
+}
+
 .for-texts, .for-images {
   width: 50%;
   min-height: 50vh;
+  padding: 20px;
 }
 
 .for-images {
@@ -771,6 +780,7 @@ padding: 45px;
 .for-img {
   Width: 49%;
   Height: 400px;
+  object-fit: cover;
 }
 
 .checkmark {
@@ -778,13 +788,13 @@ padding: 45px;
 }
 
 .for-texts h1{
-  font-size: 48px;
-  padding-bottom: 35px;
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: justify;
 }
 
 .checkmark p{
   padding-top: 30px;
-  font-size: 20px;
 }
 
 .imgcheck {
@@ -814,22 +824,19 @@ padding: 45px;
 .cars-texts {
   min-height: 50vh;
   width: 50%;
-  padding-bottom:px;
-  padding-left: 35px;
+  padding: 30px;
 }
 
 .cars-texts h1{
-  font-size: 30px;
-  padding-bottom: 20px;
+  font-size: 25px;
+  text-align: justify;
 }
 
 .cars-texts p{
-  font-size: 18px;
   padding-bottom: 10px;
 }
 
 .car-abt {
-  width: 80%;
   min-height: 405px;
   margin: 0 auto;
   display: flex;
@@ -848,22 +855,16 @@ padding: 45px;
     align-items: flex-end;
   }
 
-  .company-logo {
-    width: 80px;
-    height: 20px;
-  }
-
   .flex {
     flex-direction: column;
   }
 
-  #hero-section .text-section, #hero-section .image-section {
-    width: 100%;
+  .classfor-about {
+    padding: 20px 0;
   }
 
-  #hero-section .text-section h1{
-    font-size: 25px;
-    text-align: center;
+  #hero-section .text-section, #hero-section .image-section {
+    width: 100%;
   }
 
   #hero-section, #quote-section {
@@ -930,15 +931,11 @@ padding: 45px;
   }
 
   #third-cont, .plus-sec {
-    margin: 5%;
-    padding: 5px;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+    padding: 10px;
   }
 
   .for-plus {
-    padding-right: 7px;
+    padding-right: 13px;
   }
 
   #third-cont, .image-page {
@@ -968,8 +965,9 @@ padding: 45px;
     padding: 20px;
   }
 
-  .cust-image, .cus-image {
+  .cust-image {
     padding: 15px;
+    width: 100%;
   }
 
   .auto-first {
@@ -997,6 +995,16 @@ padding: 45px;
   .fre-head {
     padding: 10px;
     font-size: 15px;
+  }
+
+  .checkmark {
+    display: flex;
+    justify-content: center;
+  }
+
+  .auto-first, .auto-second {
+    width: 100%;
+    height: 100%;
   }
 
   .last-txt h4 {
@@ -1058,6 +1066,7 @@ padding: 45px;
   .bk-img {
     width: 100%;
     order: 2;
+    margin-top: 20px;
   }
 
   .second-side h1 {
@@ -1066,7 +1075,6 @@ padding: 45px;
   }
 
   .second-side p {
-    font-size: 16px;
     padding-top: 15px;
   }
 
@@ -1093,7 +1101,7 @@ padding: 45px;
   }
 
   .auto-second {
-    padding-top: 20px;
+    padding: 20px;
   }
 
   .for-texts, .for-images {
@@ -1103,18 +1111,6 @@ padding: 45px;
 
   .for-images {
     flex-direction: column;
-  }
-
-  .for-img {
-    width: 100%;
-    height: 300px;
-    padding: 10px;
-  }
-
-  .for-texts h1 {
-    font-size: 32px;
-    padding-bottom: 5px;
-    padding-top: 0;
   }
 
   .car-problem {
@@ -1130,7 +1126,6 @@ padding: 45px;
 }
   
 .right-section ul li {
-  margin-right: 10px;
   font-size: 14px;
 }
 
@@ -1144,10 +1139,6 @@ padding: 45px;
 
 #quote-section .left-section .text-box {
   width: 100%;
-}
-
-.auto-first h1, p {
-  font-size: 14px;
 }
 
 .cars-about {
@@ -1171,12 +1162,10 @@ padding: 45px;
   }
 
   .cars-texts p {
-    font-size: 12px;
     padding-bottom: 15px;
   }
 
   .cars-texts h1 {
-    font-size: 25px;
     padding-bottom: 15px;
   }
 
@@ -1200,13 +1189,12 @@ padding: 45px;
   }
 
   .company-logo {
-    width: 80px;
+    width: 100px;
     height: 20px;
   }
 
   #hero-section .text-section, #hero-section .image-section {
     width: 100%;
-    padding: 20px;
   }
 
   #quote-section .left-section .text-box {
@@ -1215,7 +1203,6 @@ padding: 45px;
 
   #quote-section .left-section h2, #quote-section .right-form-section h3 {
     font-size: 25px;
-    text-align: center;
     padding-top: 5%;
   }
 
@@ -1240,19 +1227,11 @@ padding: 45px;
     padding: 10px;
   }
 
-  #container, .through {
-    font-size: 14px;
-  }
-
   #container, .dashed {
     margin-bottom: 10px;
   }
 
-  .dash-flex {
-    width: 50%;
-  }
-
-  .dash-arrow {
+  .dash-arrow,  .dash-flex {
     width: 50%;
   }
 
@@ -1277,13 +1256,20 @@ padding: 45px;
     font-size: 30px;
   }
 
-  .second-side p {
+  .justify {
     font-size: 17px;
   }
 
   .auto-first, .auto-second {
     margin: 0;
-    height: 60vh;
+    min-height: 50vh;
+    width: 100%;
+  }
+
+  .auto-diag {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
   }
 
   .auto-first {
@@ -1293,6 +1279,7 @@ padding: 45px;
 
   .auto-ph {
     margin-bottom: 5px;
+    width: 30%;
   }
 
   .for-images {
@@ -1302,33 +1289,25 @@ padding: 45px;
   }
 
   .for-img {
-    width: 80%;
+    width: 100%;
     height: 40vh;
     padding-top: 10px;
   }
 
-  .for-texts h1 {
-    font-size: 30px;
-    padding-top: 15px;
-    text-align: center;
+  .cars-texts {
+    padding: 30px;
   }
 
-  .checkmark p {
-    font-size: 18px;
+  .autofirst {
+    width: 100%;
   }
 
-  .cars-texts p {
-    font-size: 14px;
+  .arrow {
+    padding-top:;
   }
 
-  .cars-texts h1 {
-   font-size: 24px; 
-   padding-top: 10%;
-   text-align: center;
-  }
-
-  .car-pro {
-    height: vh;
+  .fr-txts {
+    width: 100%;
   }
   
   .for-texts {
@@ -1343,4 +1322,20 @@ padding: 45px;
     text-align: center;
   }
 
+  .right-section ul li a {
+    padding-right: 17px;
+  }
+
+  .just {
+    font-size: 13px;
+    text-align: justify;
+  }
+
+}
+
+
+@media (max-width: 375px) {
+  .right-section ul li a {
+    padding-right: 0;
+  }
 }
