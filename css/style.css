@@ -386,8 +386,8 @@ body {
   }
   
   #last-section, .logo {
-    width: 10%;
-    height: 10%;
+    min-width: 10%;
+    min-height: 10%;
     padding-bottom: 7px;
   }
 
